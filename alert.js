@@ -148,7 +148,7 @@ alert("I am JavaScript!");
 //} else if (login == '' || login === null) {
 //  alert('Canceled');
 //} else {
-//  alert("I don’t know you");
+//  alert("I do not know you");
 //}
 
 
@@ -199,7 +199,7 @@ alert("I am JavaScript!");
 //Task 2.14
 //switch (browser) {
 //    case 'Edge':
-//      alert( "You've got the Edge!" );
+//      alert( "You have got the Edge!" );
 //      break;
   
 //    case 'Chrome':
@@ -347,7 +347,7 @@ alert("I am JavaScript!");
 // let user = {};  
 // user.name = "John";  
 // user.surname = "Smith";  
-// user.name = "Pete";  
+// user.name = "Peter";  
 // delete user.name;
 
 // Check for emptiness
