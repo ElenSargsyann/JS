@@ -148,7 +148,7 @@ alert("I am JavaScript!");
 //} else if (login == '' || login === null) {
 //  alert('Canceled');
 //} else {
-//  alert("I don’t know you");
+//  alert("I do not know you");
 //}
 
 
@@ -199,7 +199,7 @@ alert("I am JavaScript!");
 //Task 2.14
 //switch (browser) {
 //    case 'Edge':
-//      alert( "You've got the Edge!" );
+//      alert( "You have got the Edge!" );
 //      break;
   
 //    case 'Chrome':
@@ -347,7 +347,7 @@ alert("I am JavaScript!");
 // let user = {};  
 // user.name = "John";  
 // user.surname = "Smith";  
-// user.name = "Pete";  
+// user.name = "Peter";  
 // delete user.name;
 
 // Check for emptiness
@@ -487,16 +487,337 @@ alert("I am JavaScript!");
 //   alert(accumulator.value);
   
 
+<<<<<<< HEAD
 // Task 6.1
 
 // function sumTo(n) {
 //     let sum = 0;
 //     for (let i = 1; i <= n; i++) {
 //       sum += i; // 1ic minchev n hertakanutyamb bolor tvery gumarum em
+=======
+//Task 5.1  
+
+// It will show `undefined`
+
+
+// Task 5.2
+
+// let a = 1.23;
+
+
+// let big = 1234567890123456789012345678901234567890n;
+
+
+// let billion = 1e9;      
+// let micro = 1e-6;        
+
+
+// let num = 255;
+// num.toString(16);  
+// num.toString(2);   
+
+
+// Math.round(3.6);  
+// Math.floor(3.6);  
+// Math.ceil(3.2);   
+// Math.trunc(3.9);  
+
+
+// let n = 1.23456;
+// Math.round(n * 100) / 100;   
+
+
+// n.toFixed(2); 
+
+
+
+// 0.1 + 0.2 === 0.3; 
+
+// +(0.1 + 0.2).toFixed(2) === 0.3; 
+
+
+// isNaN(NaN);         
+// isFinite("15");     
+// isFinite("str");   
+
+
+// parseInt("100px");       
+// parseFloat("12.5em");    
+// parseInt("a123");        
+
+
+// parseInt("ff", 16);  
+
+
+// Math.random();       
+// Math.max(1, 3, 9);   
+// Math.min(-1, 0, 3); 
+// Math.pow(2, 10);     
+
+
+// Task 5.3
+
+// function ucFirst(str) {
+//     return str.charAt(0).toUpperCase() + str.slice(1);
+//   }
+  
+//   console.log(ucFirst("john")); 
+
+
+//   function checkSpam(str) {
+//     return /viagra|xxx/i.test(str); 
+//   }
+  
+
+//   console.log(checkSpam('buy ViAgRA now')); 
+//   console.log(checkSpam('free xxxxx')); 
+//   console.log(checkSpam('innocent rabbit')); 
+  
+
+//   function truncate(str, maxlength) {
+//     if (str.length > maxlength) {
+//       return str.slice(0, maxlength) + "…";
+//     }
+//     return str;
+//   }
+  
+
+//   console.log(truncate("What I'd like to tell on this topic is:", 20)); 
+//   console.log(truncate("Hi everyone!", 20)); 
+
+
+//   function extractCurrencyValue(str) {
+//     return parseFloat(str.slice(1)); 
+//   }
+  
+ 
+//   console.log(extractCurrencyValue('$120')); 
+
+
+
+  
+// Task 5.4
+
+// let fruits = ["Apples", "Pear", "Orange"];
+
+// let shoppingCart = fruits;
+// shoppingCart.push("Banana");
+
+
+// alert(fruits.length); 
+
+
+
+// let styles = ["Jazz", "Blues"];
+// styles.push("Rock-n-Roll");
+// styles[Math.floor(styles.length / 2)] = "Classics";
+// alert(styles.shift()); 
+// styles.unshift("Rap", "Reggae");
+// alert(styles);
+
+
+// let arr = ["a", "b"];
+
+// arr.push(function() {
+//   alert(this);
+// });
+
+// arr[2]();
+
+
+// function sumInput() {
+//     let numbers = [];
+//     let sum = 0;
+  
+//     while (true) {
+//       let value = prompt("Enter a number:", 0);
+  
+//       if (value === "" || value === null || isNaN(value)) {
+//         break;
+//       }
+  
+//       numbers.push(+value); 
+//       sum += +value; 
+//     }
+  
+//     return sum;
+//   }
+  
+//   alert(sumInput());
+
+
+//   function getMaxSubSum(arr) {
+//     let maxSum = 0;
+//     let currentSum = 0;
+  
+//     for (let num of arr) {
+//       currentSum += num;
+//       maxSum = Math.max(maxSum, currentSum);
+//       if (currentSum < 0) currentSum = 0;
+//     }
+  
+//     return maxSum;
+//   }
+  
+//   alert(getMaxSubSum([-1, 2, 3, -9])); 
+//   alert(getMaxSubSum([2, -1, 2, 3, -9])); 
+//   alert(getMaxSubSum([-1, 2, 3, -9, 11])); 
+//   alert(getMaxSubSum([-2, -1, 1, 2])); 
+//   alert(getMaxSubSum([100, -9, 2, -3, 5]));
+//   alert(getMaxSubSum([1, 2, 3])); 
+//   alert(getMaxSubSum([-1, -2, -3])); 
+
+
+
+// Task 5.5
+
+// function camelize(str) {
+//     return str
+//       .split('-')
+//       .map((word, index) => index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1))
+//       .join('');
+//   }
+  
+//   function filterRange(arr, a, b) {
+//     return arr.filter(item => item >= a && item <= b);
+//   }
+  
+//   function filterRangeInPlace(arr, a, b) {
+//     for (let i = 0; i < arr.length; i++) {
+//       if (arr[i] < a || arr[i] > b) {
+//         arr.splice(i, 1);
+//         i--;
+//       }
+//     }
+//   }
+  
+//   let arr = [5, 2, 1, -10, 8];
+//   arr.sort((a, b) => b - a);
+//   alert(arr);
+  
+//   function copySorted(arr) {
+//     return arr.slice().sort();
+//   }
+  
+//   function Calculator() {
+//     this.calculate = function(str) {
+//       let [a, op, b] = str.split(' ');
+//       a = +a;
+//       b = +b;
+//       if (op === '+') return a + b;
+//       if (op === '-') return a - b;
+//     };
+//     this.addMethod = function(name, func) {
+//       this[name] = func;
+//     };
+//   }
+  
+//   let john = { name: "John", age: 25 };
+//   let pete = { name: "Pete", age: 30 };
+//   let mary = { name: "Mary", age: 28 };
+  
+//   let users = [ john, pete, mary ];
+//   let names = users.map(user => user.name);
+//   alert(names);
+  
+//   let usersMapped = users.map(user => ({
+//     fullName: `${user.name} ${user.surname}`,
+//     id: user.id
+//   }));
+  
+//   function sortByAge(users) {
+//     users.sort((a, b) => a.age - b.age);
+//   }
+  
+//   function shuffle(array) {
+//     for (let i = array.length - 1; i > 0; i--) {
+//       let j = Math.floor(Math.random() * (i + 1));
+//       [array[i], array[j]] = [array[j], array[i]];
+//     }
+//   }
+  
+//   function getAverageAge(users) {
+//     return users.reduce((sum, user) => sum + user.age, 0) / users.length;
+//   }
+  
+//   function unique(arr) {
+//     return [...new Set(arr)];
+//   }
+  
+//   function groupById(arr) {
+//     return arr.reduce((obj, item) => {
+//       obj[item.id] = item;
+//       return obj;
+//     }, {});
+//   }
+
+
+
+// Task 5.7
+
+// function unique(arr) {
+//     return [...new Set(arr)];
+//   }
+  
+//   let values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
+//   alert(unique(values));
+
+  
+//   function aclean(arr) {
+//     let map = new Map();
+//     arr.forEach(word => {
+//       let sorted = word.toLowerCase().split('').sort().join('');
+//       map.set(sorted, word);
+//     });
+//     return Array.from(map.values());
+//   }
+  
+//   let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+//   alert(aclean(arr));
+
+  
+//   let map = new Map();
+//   map.set("name", "John");
+  
+//   let keys = [...map.keys()];
+//   keys.push("more");
+//   alert(keys);
+  
+
+
+// Task 5.8
+
+// let messages = [
+//     {text: "Hello", from: "John"},
+//     {text: "How goes?", from: "John"},
+//     {text: "See you soon", from: "Alice"}
+//   ];
+  
+//   let readStatus = new WeakMap();
+  
+//   readStatus.set(messages[0], false);
+//   readStatus.set(messages[1], false);
+//   readStatus.set(messages[2], false);
+  
+//   readStatus.set(messages[0], true);
+  
+//   console.log(readStatus.get(messages[0]));
+//   console.log(readStatus.get(messages[1]));
+  
+
+
+// Task 5.9
+
+// function sumSalaries(salaries) {
+//     let sum = 0;
+//     for (let salary of Object.values(salaries)) {
+//       sum += salary;
+>>>>>>> 9d3b471dbff9eb3b80284b7c1b761ff415a1ae6c
 //     }
 //     return sum;
 //   }
   
+<<<<<<< HEAD
 
 // function sumTo(n) {
 //     if (n === 1) return 1; // ete 1, apa 1
@@ -888,4 +1209,157 @@ alert("I am JavaScript!");
   
 //  bind-ov naxapes dnum enq argumenty u kontexty
 //   askPassword(user.login.bind(user, true), user.login.bind(user, false));
+=======
+//   let salaries = {
+//     "John": 100,
+//     "Pete": 300,
+//     "Mary": 250
+//   };
+  
+//   alert(sumSalaries(salaries)); 
+  
+//   function count(obj) {
+//     return Object.keys(obj).length;
+//   }
+  
+//   let user = {
+//     name: 'Jony',
+//     age: 30
+//   };
+  
+//   alert(count(user));   
+
+
+
+// Task 5.10
+
+// let user = {
+//     name: "John",
+//     years: 30
+//   };
+  
+//   let { name, years: age, isAdmin = false } = user;
+  
+//   alert(name);   
+//   alert(age);    
+//   alert(isAdmin); 
+  
+//   function topSalary(salaries) {
+//     let maxSalary = Math.max(...Object.values(salaries)); 
+//     if (maxSalary === -Infinity) return null; 
+  
+//     for (let [name, salary] of Object.entries(salaries)) {
+//       if (salary === maxSalary) {
+//         return name; 
+//       }
+//     }
+//   }
+  
+//   let salaries = {
+//     "John": 100,
+//     "Pete": 300,
+//     "Mary": 250
+//   };
+  
+//   alert(topSalary(salaries)); 
+  
+
+
+// Task 5.11
+
+// let date = new Date(2012, 1, 20, 3, 12);
+// alert(date);
+
+// function getWeekDay(date) {
+//   const days = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
+//   return days[date.getDay()];
+// }
+
+// let date1 = new Date(2012, 0, 3);
+// alert(getWeekDay(date1));
+
+// function getLocalDay(date) {
+//   let day = date.getDay();
+//   if (day === 0) return 7;
+//   return day;
+// }
+
+// let date2 = new Date(2012, 0, 3);
+// alert(getLocalDay(date2));
+
+// function getDateAgo(date, days) {
+//   let copy = new Date(date);
+//   copy.setDate(copy.getDate() - days);
+//   return copy.getDate();
+// }
+
+// let date3 = new Date(2015, 0, 2);
+// alert(getDateAgo(date3, 1));
+// alert(getDateAgo(date3, 2));
+// alert(getDateAgo(date3, 365));
+
+// function getLastDayOfMonth(year, month) {
+//   let date = new Date(year, month + 1, 0);
+//   return date.getDate();
+// }
+
+// alert(getLastDayOfMonth(2012, 1));
+
+// function getSecondsToday() {
+//   let now = new Date();
+//   return now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
+// }
+
+// alert(getSecondsToday());
+
+// function getSecondsToTomorrow() {
+//   let now = new Date();
+//   return (24 - now.getHours()) * 3600 - now.getMinutes() * 60 - now.getSeconds();
+// }
+
+// alert(getSecondsToTomorrow());
+
+// function formatDate(date) {
+//   let diff = new Date() - date;
+//   if (diff < 1000) return "right now";
+//   if (diff < 60000) return Math.floor(diff / 1000) + " sec. ago";
+//   if (diff < 3600000) return Math.floor(diff / 60000) + " min. ago";
+//   let d = date;
+//   return ("0" + d.getDate()).slice(-2) + "." + ("0" + (d.getMonth() + 1)).slice(-2) + "." + d.getFullYear().toString().slice(-2) + " " + ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
+// }
+
+// alert(formatDate(new Date(new Date - 1)));
+// alert(formatDate(new Date(new Date - 30 * 1000)));
+// alert(formatDate(new Date(new Date - 5 * 60 * 1000)));
+// alert(formatDate(new Date(new Date - 86400 * 1000)));
+
+
+// Task 5.12
+
+// let user = {
+//     name: "John Smith",
+//     age: 35
+//   };
+  
+//   let jsonString = JSON.stringify(user);
+//   let newUser = JSON.parse(jsonString);
+
+//   let room = {
+//     number: 23
+//   };
+  
+//   let meetup = {
+//     title: "Conference",
+//     occupiedBy: [{name: "Johny"}, {name: "Alica"}],
+//     place: room
+//   };
+  
+//   room.occupiedBy = meetup;
+//   meetup.self = meetup;
+  
+//   alert( JSON.stringify(meetup, function replacer(key, value) {
+//     if (value === meetup) return undefined;
+//     return value;
+//   }));
+>>>>>>> 9d3b471dbff9eb3b80284b7c1b761ff415a1ae6c
   
